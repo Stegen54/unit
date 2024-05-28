@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        
+        <div class="converter" id="lengthConverter">
+            <h2>Length Converter</h2>
+            <input type="number" id="lengthInput" placeholder="Enter value">
+            <select id="lengthUnit" title="Length Unit">
+                <option value="metersToFeet">Meters to Feet</option>
+                <option value="feetToMeters">Feet to Meters</option>
+                <option value="kilometersToMiles">Kilometers to Miles</option>
+                <option value="milesToKilometers">Miles to Kilometers</option>
+            </select>
+            <button onclick="convertLength()">Convert</button>
+            <p id="lengthResult"></p>
+        </div>
+        
+        <div class="converter" id="temperatureConverter">
+            <h2>Temperature Converter</h2>
+            <input type="number" id="temperatureInput" placeholder="Enter value">
+            <select id="temperatureUnit" title="Temperature Unit">
+                <option value="celsiusToFahrenheit">Celsius to Fahrenheit</option>
+                <option value="fahrenheitToCelsius">Fahrenheit to Celsius</option>
+                <option value="kelvinToCelsius">Kelvin to Celsius</option>
+                <option value="celsiusToKelvin">Celsius to Kelvin</option>
+            </select>
+            <button onclick="convertTemperature()">Convert</button>
+            <p id="temperatureResult"></p>
+        </div>
+
+        <div class="converter" id="weightConverter">
+            <h2>Weight Converter</h2>
+            <input type="number" id="weightInput" placeholder="Enter value">
+            <select id="weightUnit" title="Weight Unit">
+                <option value="kilogramsToPounds">Kilograms to Pounds</option>
+                <option value="poundsToKilograms">Pounds to Kilograms</option>
+                <option value="gramsToOunces">Grams to Ounces</option>
+                <option value="ouncesToGrams">Ounces to Grams</option>
+            </select>
+            <button onclick="convertWeight()">Convert</button>
+            <p id="weightResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
